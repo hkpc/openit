@@ -1338,7 +1338,7 @@ proxies:
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
   udp: true
-- name: "\U0001F1FA\U0001F1F3 UN 152 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 152 VMS"
   server: us65.netfilx.live
   port: 80
   type: vmess
@@ -1693,7 +1693,22 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 189 VMS"
+- name: "\U0001F1FA\U0001F1F3 UN 189 VMS"
+  server: us65.netfilx.live
+  port: 80
+  type: vmess
+  uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us65.netfilx.live
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 190 VMS"
   server: 172.67.130.140
   port: 2082
   type: vmess
@@ -1708,27 +1723,12 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 190 SSS"
+- name: "\U0001F1FA\U0001F1F8 US 191 SSS"
   server: 38.75.136.135
   port: 8119
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 191 VMS"
-  server: russia.com
-  port: 2095
-  type: vmess
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/v3/download.getFile
-    headers:
-      Host: ssrsub.v03.ssrsub.com
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 192 SSS"
   server: 38.121.43.97
@@ -5309,7 +5309,7 @@ proxies:
     headers:
       Host: hms03.dongfeng.cfd
     path: /linkws
-- name: "\U0001F1FA\U0001F1F3 UN 482 VMS"
+- name: "\U0001F1FA\U0001F1F8 US 482 VMS"
   type: vmess
   network: ws
   server: zula.ir
@@ -6282,6 +6282,20 @@ proxies:
     headers:
       Host: server9-3.998877.best
     path: /rksdnuhgteb?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 548 TJN"
+  type: trojan
+  network: ws
+  server: 107.172.132.248
+  port: 443
+  password: 85950277-f447-48f0-9ead-aaf6d5ff3cad
+  skip-cert-verify: true
+  udp: true
+  tfo: false
+  sni: huangshang9.zone.id
+  ws-opts:
+    headers:
+      Host: huangshang9.zone.id
+    path: /I4L1BP2DQVYmx5NYQ76MGGq
 proxy-groups:
 - name: automatic
   type: url-test
@@ -6437,7 +6451,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 149 SSS"
   - "\U0001F1FA\U0001F1F8 US 150 SSS"
   - "\U0001F1FA\U0001F1F8 US 151 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 152 VMS"
+  - "\U0001F1FA\U0001F1F8 US 152 VMS"
   - "\U0001F1FA\U0001F1F8 US 153 VMS"
   - "\U0001F1FA\U0001F1F8 US 154 SSS"
   - "\U0001F1FA\U0001F1F8 US 155 SSS"
@@ -6474,9 +6488,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 186 VMS"
   - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
-  - "\U0001F1FA\U0001F1F8 US 189 VMS"
-  - "\U0001F1FA\U0001F1F8 US 190 SSS"
-  - "\U0001F1FA\U0001F1F8 US 191 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 189 VMS"
+  - "\U0001F1FA\U0001F1F8 US 190 VMS"
+  - "\U0001F1FA\U0001F1F8 US 191 SSS"
   - "\U0001F1FA\U0001F1F8 US 192 SSS"
   - "\U0001F1FA\U0001F1F8 US 193 SSS"
   - "\U0001F1FA\U0001F1F8 US 194 SSS"
@@ -6767,7 +6781,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 479 VMS"
   - "\U0001F1FA\U0001F1F8 US 480 VMS"
   - "\U0001F1FA\U0001F1F3 UN 481 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 482 VMS"
+  - "\U0001F1FA\U0001F1F8 US 482 VMS"
   - "\U0001F1FA\U0001F1F8 US 483 VMS"
   - "\U0001F1E9\U0001F1EA DE 484 VMS"
   - "\U0001F1FA\U0001F1F8 US 485 VMS"
@@ -6833,6 +6847,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 545 VMS"
   - "\U0001F1EC\U0001F1E7 GB 546 VMS"
   - "\U0001F1FA\U0001F1F3 UN 547 VMS"
+  - "\U0001F1FA\U0001F1F8 US 548 TJN"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -6990,7 +7005,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 149 SSS"
   - "\U0001F1FA\U0001F1F8 US 150 SSS"
   - "\U0001F1FA\U0001F1F8 US 151 SSS"
-  - "\U0001F1FA\U0001F1F3 UN 152 VMS"
+  - "\U0001F1FA\U0001F1F8 US 152 VMS"
   - "\U0001F1FA\U0001F1F8 US 153 VMS"
   - "\U0001F1FA\U0001F1F8 US 154 SSS"
   - "\U0001F1FA\U0001F1F8 US 155 SSS"
@@ -7027,9 +7042,9 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 186 VMS"
   - "\U0001F1FA\U0001F1F8 US 187 VMS"
   - "\U0001F1FA\U0001F1F8 US 188 SSS"
-  - "\U0001F1FA\U0001F1F8 US 189 VMS"
-  - "\U0001F1FA\U0001F1F8 US 190 SSS"
-  - "\U0001F1FA\U0001F1F8 US 191 VMS"
+  - "\U0001F1FA\U0001F1F3 UN 189 VMS"
+  - "\U0001F1FA\U0001F1F8 US 190 VMS"
+  - "\U0001F1FA\U0001F1F8 US 191 SSS"
   - "\U0001F1FA\U0001F1F8 US 192 SSS"
   - "\U0001F1FA\U0001F1F8 US 193 SSS"
   - "\U0001F1FA\U0001F1F8 US 194 SSS"
@@ -7320,7 +7335,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 479 VMS"
   - "\U0001F1FA\U0001F1F8 US 480 VMS"
   - "\U0001F1FA\U0001F1F3 UN 481 VMS"
-  - "\U0001F1FA\U0001F1F3 UN 482 VMS"
+  - "\U0001F1FA\U0001F1F8 US 482 VMS"
   - "\U0001F1FA\U0001F1F8 US 483 VMS"
   - "\U0001F1E9\U0001F1EA DE 484 VMS"
   - "\U0001F1FA\U0001F1F8 US 485 VMS"
@@ -7386,5 +7401,6 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F3 UN 545 VMS"
   - "\U0001F1EC\U0001F1E7 GB 546 VMS"
   - "\U0001F1FA\U0001F1F3 UN 547 VMS"
+  - "\U0001F1FA\U0001F1F8 US 548 TJN"
 rules:
 - "MATCH,\U0001F310 Proxy"
